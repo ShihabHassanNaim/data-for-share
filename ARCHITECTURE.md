@@ -7,12 +7,11 @@
 ## Table of Contents
 
 **Part A — ta-backend (this service)**
-0. [Reference Images](#0-reference-images)
 1. [Stack Overview](#1-stack-overview)
 2. [Architecture: Request Pipeline](#2-architecture-request-pipeline)
 3. [Models (MongoDB)](#3-models-mongodb)
 
-**Part B — course-service (diagrams)**
+**Part B — course-service**
 4. [High-Level System Architecture](#4-high-level-system-architecture)
 5. [Request Lifecycle (End-to-End)](#5-request-lifecycle-end-to-end)
 6. [Layered Internal Architecture](#6-layered-internal-architecture)
@@ -29,7 +28,7 @@
 17. [Sentry Observability Pipeline](#17-sentry-observability-pipeline)
 18. [Deployment / Boot Sequence](#18-deployment--boot-sequence)
 
-**Part C — ta-backend diagrams**
+**Part C — ta-backend**
 19. [Per-Request Sequence](#19-per-request-sequence)
 20. [supportAuth Decision Tree](#20-supportauth-decision-tree)
 21. [RBAC Route Map](#21-rbac-route-map)
@@ -50,26 +49,7 @@
 
 # Part A — ta-backend
 
-## 0. Reference Images
 
-Your own diagrams live alongside this doc in `images/`:
-
-- `images/architecture_diagram.png` — High-level system architecture (course-service context) — §4
-- `images/auth_flow.png` — Auth & authorization flow — §12
-- `images/installments_enroll.png` — Enroll + Installment class diagram — §10
-- `images/Layerd_internel.png` — Layered internal architecture of course-service — §6
-- `images/models.png` — MongoDB data model relationships (course-service) — §7
-- `images/models.svg` — Data model diagram (ta-backend, vector) — §22
-- `images/postfresmodels.png` — PostgreSQL V3 roadmap schema — §8
-- `images/rbac.svg` — RBAC / role hierarchy (ta-backend, vector) — §21
-- `images/redic.png` — Redis cache-aside flow — §11
-- `images/request_lifecycle.png` — End-to-end request lifecycle (sequence) — §5
-- `images/TA_DataModel.png` — ta-backend data model (ER) — §22
-- `images/version_comparison.png` — V1 / V2 / V3 course content comparison — §9
-
-Each image is embedded in its referenced section.
-
----
 
 ## 1. Stack Overview
 
